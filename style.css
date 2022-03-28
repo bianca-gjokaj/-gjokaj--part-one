@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+}
+
+main {
+    padding: 25px;
+}
+
+header {
+    background-color: #70a48b;
+    padding: .10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-img {
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1em;
+}
+
+li {
+    display: inline;
+    margin-right: .5em;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: smaller;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#donation {
+    background-color: #1f211c;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: start;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 5px;
+    font-size: small;
+    text-align: start;
+}
+
+#location-1 {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: #70a48b;
+    border-radius: 10px;
+    border: 2px solid #1f211c;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+#location-2 {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: #70a48b;
+    border: 2px solid #1f211c;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: .10rem;
+}
+
+img {
+    border-radius: 10px;
+    flex-direction: row;
+    padding: .10px;
+}
+
+#footer {
+    position: fixed;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #70a48b;
+}
+
+#footer-img {
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+    #header-img {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        bottom: 5px;
+    }
+
+    .list {
+        align-items: flex-end;
+        padding-right: 10px;
+    }
+
+    ul {
+        margin-right: 5px;
+    }
+
+    h3 {
+        display: flex;
+        flex-wrap: row;
+    }
+
+    p {
+        text-align: start;
+    }
+
+    .text-images-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .images-side {
+        width: 66.67%;
+        padding-left: 30px;
+    }
+
+    .text-side {
+        width: 33.33%;
+    }
+
+    .images {
+        columns: 3;
+    }
+}
